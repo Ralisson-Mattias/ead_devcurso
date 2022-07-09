@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale conosco</title>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <h1>Fale Conosco</h1>
+    <h1>Empresa</h1>
 </body>
 
 </html>
