@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'cpg',
+        'cpf',
         'rg',
         'orgao',
         'data_expedicao',
@@ -32,8 +32,7 @@ class User extends Authenticatable
         'cidade',
         'uf',
         'grupo',
-        'status',
-        'remember_token'
+        'status'
     ];
 
     /**
