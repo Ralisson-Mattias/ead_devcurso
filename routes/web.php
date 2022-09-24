@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\AulasController;
 use App\Http\Controllers\ContatoController;
-use App\Http\Controllers\PaginaInicialController;
+use App\Http\Controllers\CursosController;
+use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PaginaInicialController::class, 'index']);
-Route::get('/aulas', [AulasController::class, 'index']);
+Route::get('/', [CursosController::class, 'index']);
+Route::get('/cursos', [CursosController::class, 'index']);
+Route::get('/curso/{id}', [CursosController::class, 'show_cursos']);
 Route::get('/contato', [ContatoController::class, 'index']);
+
+Route::get('/cadastro/cursos', [CursosController::class, 'cadastro']);
+Route::post('/cadastro/cursos/salvar', [CursosController::class, "salvar_curso"])->name('salvar_curso');
+
+Route::get('/cadastro/usuarios', [UsuariosController::class, 'cadastro']);
+Route::post('/cadastro/usuarios/salvar', [UsuariosController::class, "salvar_usuario"])->name('salvar_usuario');

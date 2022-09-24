@@ -1,11 +1,9 @@
 @extends('layouts.app')
+@section('conteudo')
 
-@section("menu_principal")
-<li class="isActive"><a href="/">Página inicial</a></li>
-<li><a href="/aulas">Cursos</a></li>
-<li><a href="/contato">Contato</a></li>
-@endsection
-
-@section("conteudo")
-Pagina inicial
-@endsection
+<body>
+    <div class="pageheaderbg">
+    </div>
+</body>
+@endsection('conteudo')
+@include('layouts.partials.menu')

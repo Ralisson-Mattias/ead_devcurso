@@ -19,4 +19,9 @@ class Curso extends Model
         'professor_id',
         'status'
     ];
+
+    public function modulos_exibir()
+    {
+        return $this->hasMany(Modulo::class, 'curso_id', 'id');
+    }
 }
